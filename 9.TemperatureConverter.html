@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var fahr, celVal, FahrenheitVal, Celsius1;
+
+
+        function CelsiusToFahrenheit(cel) {
+            celVal = cel;
+            fahr = cel * 9 / 5 + 32;
+            return fahr;
+        }
+
+        CelsiusToFahrenheit(38);
+        document.write("<br>converter for celsius to Fahrenheit : <br> ");
+        document.write(celVal + "°C is " + fahr + "°F");
+
+        function FahrenheitToCelsius(Fahrenheit) {
+            FahrenheitVal = Fahrenheit;
+            Celsius1 = (Fahrenheit - 32) * 5 / 9;
+            return Celsius1;
+        }
+
+        FahrenheitToCelsius(100);
+        document.write("<br><br><br><br><br>converter for Fahrenheit to celsius : <br> ");
+        document.write(FahrenheitVal + "°F is " + Celsius1 + "°C");
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

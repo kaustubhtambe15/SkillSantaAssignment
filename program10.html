@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function swapcase(str) {
+            return str.replace(/([a-z]+)|([A-Z]+)/g, function (match, chr) {
+                return chr ? match.toUpperCase() : match.toLowerCase();
+            });
+        }
+
+        var test = "This is JavaScript PrOgraM";
+        document.write("input:  "+test);
+        document.write("<br><br>output:  "+swapcase(test));
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

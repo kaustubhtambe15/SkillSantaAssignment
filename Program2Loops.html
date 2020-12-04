@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+        var odd = " is odd";
+        var prime = " and prime";
+        var even = " is even";
+
+        for (var x = 0; x < 5; x++) {
+            if (x === 0) {
+                console.log(x + even);
+                document.write(x+even+"<br>");
+            }
+            else if(x === 1){
+                console.log(x + odd);
+                document.write(x+ odd+"<br>");
+            }
+            
+            else if (x === 2) {
+                console.log(x + even + prime);
+                document.write(x + even + prime+"<br>");
+            }
+            else if (x % 2 === 0) {
+                console.log(x + even);
+                document.write(x+even+"<br>");
+            }
+            else if (x  === 3) {
+                console.log(x + odd + prime);
+                document.write(x + odd + prime+"<br>");
+            }
+
+            else {
+                console.log(x + odd);
+                document.write(x+odd+"<br>")
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

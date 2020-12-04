@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var s;
+        function fibonacci(n) {
+            if (n === 1) {
+               // s= fibonacci(n===1)
+               s=[0, 1]
+                  return s;
+
+            }
+            else {
+                s = fibonacci(n - 1);
+                s.push(s[s.length - 1] + s[s.length - 2]);
+                return s;
+            }
+        };
+
+        document.write("fibonacci series for n times whare n =20  is: <br>")
+
+        //(n==20)
+        fibonacci(1);
+        document.write(s);
+
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

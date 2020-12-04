@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sorting numbers</title>
+    <script>
+        var num1, num2, num3, result;
+        num1 = 0;
+        num2 = -1;
+        num3 = 4;
+
+        if (num1 > num2 && num1 > num3) {
+            if (num2 > num3) {
+                result = "this are sorted numbers  " + num1 + " , " + num2 + " , " + num3;
+            } else {
+                result = "this are sorted numbers  " + num1 + " , " + num3 + " , " + num2;
+            }
+        }
+
+        else if (num2 > num1 && num2 > num3) {
+            if (num1 > num3) {
+                result = "this are sorted numbers  " + num2 + " , " + num1 + " , " + num3;
+            } else {
+                result = "this are sorted numbers  " + num2 + " , " + num3 + " , " + num1;
+            }
+        }
+
+        else if (num3 > num2 && num3 > num1) {
+            if (num2 > num1) {
+                result = "this are sorted numbers  " + num3 + " , " + num2 + " , " + num1;
+            } else {
+                result = "this are sorted numbers  " + num3 + " , " + num1 + " , " + num2;
+            }
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+    <h4>sample numbers: 0,-1, 4 </h4>
+    <button id="btn" onclick="alert(result)">click this to sort number </button>
+</body>
+
+</html>

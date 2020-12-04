@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitalize</title>
+    <script>
+        var capitalize_Words = function (sentence) {
+            var words = sentence.split(" ");
+            for (let i = 0; i < words.length; i++) {
+                words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+            }
+            var result= words.join(" ");
+            return result;
+        }
+        console.log(capitalize_Words("hi from skilsanta"));
+        document.write(capitalize_Words("hi from skilsanta"));
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
