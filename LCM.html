@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCM</title>
+    <script>
+        function lcm(x, y) {
+
+            return (!x || !y) ? 0 : Math.abs((x * y) / Demo(x, y));
+        }
+
+        function Demo(x, y) {
+            x = Math.abs(x);
+            y = Math.abs(y);
+            while (y) {
+                var t = y;
+                y = x % y;
+                x = t;
+            }
+            return x;
+        }
+
+        console.log(lcm(3, 15));
+        console.log(lcm(10, 15));
+        
+        document.write(lcm(3, 15) + "<br>");
+        document.write(lcm(10, 15));
+   
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

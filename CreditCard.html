@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>credit Card Validation</title>
+    <script>
+        function validateCreditCard(CardNum) {
+            
+            if (CardNum.length !== 16) {
+                return false;
+            }
+
+            for (var i = 0; i <CardNum.length; i++) {
+                var num1 = CardNum[i];
+                num1 = Number.parseInt(num1);
+                if (!Number.isInteger(num1)) {
+                    return false;
+                }
+            }
+
+            var obj = {};
+            for (var i = 0; i < CardNum.length; i++) {
+                obj[CardNum[i]] = true;
+            }
+            if (Object.keys(obj).length < 2) {
+                return false;
+            }
+
+            if (CardNum[CardNum.length - 1] % 2 !== 0) {
+                return false;
+            }
+
+            var sum = 0;
+            for (var i = 0; i < CardNum.length; i++) {
+                sum += Number(CardNum[i]);
+            }
+            if (sum <= 16) {
+                return false;
+            }
+
+            return true;
+        };
+
+        console.log(validateCreditCard('9999777788880000')); 
+
+       document.write(validateCreditCard("9999777788880000"));
+    </script>
+</head>
+
+<body>
+<p></p>
+</body>
+
+</html>
